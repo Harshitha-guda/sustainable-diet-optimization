@@ -13,7 +13,7 @@ It combines **data preprocessing, feature engineering, and linear programming (o
 * 🌱 Carbon footprint minimization for sustainable food choices
 * 🧠 Constraint-based optimization using Linear Programming (PuLP)
 * ⚙️ Data preprocessing and feature engineering
-* 📊 Multiple visualizations for data insights
+* 📊 Insightful visualizations for better understanding
 * 🛑 Allergy-aware filtering system
 
 ---
@@ -43,6 +43,12 @@ sustainable-diet-optimization/
 │   ├── main.py
 │   └── __init__.py
 │
+├── assets/
+│   ├── carbon_distribution.png
+│   ├── correlation_heatmap.png
+│   ├── energy_vs_carbon.png
+│   ├── low_carbon_foods.png
+│
 ├── outputs/
 │   ├── (generated visualizations)
 │
@@ -55,30 +61,49 @@ sustainable-diet-optimization/
 
 ## ⚙️ How It Works
 
-1. **Data Preprocessing**
+### 1️⃣ Data Preprocessing
 
-   * Cleans dataset and handles missing values
-   * Converts nutritional values to per 100g
-   * Encodes categorical features and allergies
+* Cleans dataset and handles missing values
+* Converts nutritional values to per 100g
+* Encodes categorical features and allergies
 
-2. **Personalization**
+### 2️⃣ Personalization
 
-   * Accepts user preferences (calories, protein, diet type, allergies)
-   * Filters dataset accordingly
+* Accepts user preferences (calories, protein, diet type, allergies)
+* Filters dataset based on constraints
 
-3. **Optimization**
+### 3️⃣ Optimization
 
-   * Uses **Linear Programming (PuLP)**
-   * Minimizes carbon footprint
-   * Ensures nutritional constraints are satisfied
+* Uses **Linear Programming (PuLP)**
+* Minimizes carbon footprint
+* Ensures nutritional requirements are satisfied
 
-4. **Visualization**
+### 4️⃣ Visualization
 
-   * Carbon distribution by food type
-   * Energy vs carbon footprint
-   * Correlation heatmap
-   * Allergy distribution
-   * Low carbon food analysis
+* Carbon footprint distribution
+* Energy vs carbon trade-off
+* Correlation between nutrients and emissions
+* Identification of low-carbon food options
+
+---
+
+## 📊 Visualizations
+
+### 🌱 Carbon Footprint Distribution
+
+![Carbon Distribution](assets/carbon_distribution.png)
+
+### ⚡ Energy vs Carbon Trade-off
+
+![Energy vs Carbon](assets/energy_vs_carbon.png)
+
+### 🔗 Correlation Heatmap
+
+![Correlation Heatmap](assets/correlation_heatmap.png)
+
+### 🥗 Low Carbon Food Options
+
+![Low Carbon Foods](assets/low_carbon_foods.png)
 
 ---
 
@@ -100,15 +125,15 @@ python -m src.main
 
 ## 📊 Sample Output
 
-* Optimized meal plan based on constraints
+* Optimized meal plan based on user constraints
 * Total carbon footprint and energy values
-* Multiple visualizations saved in `outputs/` folder
+* Visualizations saved in `outputs/` folder
 
 ---
 
 ## ⚠️ Note
 
-* User inputs are currently **hardcoded** for demonstration purposes
+* User inputs are currently **hardcoded for demonstration purposes**
 * Can be extended to:
 
   * CLI input
@@ -118,10 +143,10 @@ python -m src.main
 
 ## 🔮 Future Improvements
 
-* Quantity-based optimization (serving sizes)
+* Quantity-based optimization (portion control)
 * Real-time user input interface
-* Region-based food filtering
-* Integration with mobile/web applications
+* Region-based filtering
+* Web/mobile deployment
 
 ---
 
